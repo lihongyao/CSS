@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.content img {
+    display: block;
+    width: calc(100% - 200px);
+    margin: 0 auto;
+}
+
+.content .wrap {
+    width: calc(100% - 200px);
+    margin: 20px auto;
+}
+
+
+.content .fl { width: 60%; }
+.content .fr { width: 40%; }
+
+.content .sub-title {
+    color: rgb(102, 43, 11);
+    font-weight: lighter;
+    margin: 10px 0px;
+}
+
+.content input, textarea, button {
+    display: block;
+    font-size: 17px;
+    margin: 15px 0px;
+}
+.content input, textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(69, 69, 69);
+}
+
+.content input {
+    width: 50%;
+    height: 33px;
+    padding-left: 8px;
+}
+
+.content textarea {
+    width: 75%;
+    height: 135px;
+    padding: 8px;
+}
+
+.content button {
+    width: 100px;
+    color: #fff;
+    line-height: 30px;
+    background: rgb(46, 138, 87);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.content p {
+    line-height: 35px;
+}
+
+
+.content a:hover { text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

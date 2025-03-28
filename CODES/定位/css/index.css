@@ -1,0 +1,186 @@
+
+@charset "UTF-8";
+
+
+/*头部样式*/
+.menu-list {
+    width: calc(5 * 120px + 4px);
+    /*块级元素水平居中*/
+    margin: 100px auto;
+}
+
+
+.menu-list li {
+    width: 120px;
+    height: 40px;
+    background: #333;
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+
+    position: relative;
+}
+
+.menu-list li:hover {
+    background: #444;
+}
+
+.menu-list li:hover .sub-menu-list {
+    display: block;
+}
+
+.menu-list > li:not(:first-child) {
+    border-left: 1px solid #ccc;
+}
+
+
+.menu-list a {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+
+.sub-menu-list {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    z-index: 1;
+}
+.sub-menu-list > li {
+    float: none;
+    border-top: 1px solid #ccc;
+}
+
+
+/*轮播图*/
+
+.flash-wrap {
+    width: 80%;
+    min-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img-wrap img {
+    width: 100%;
+    opacity: 0;
+    vertical-align: middle;
+}
+.img-wrap img:not(:first-child) {
+    position: absolute;
+    top:  0;
+    left: 0;
+}
+
+.img-wrap .active {
+    opacity: 1;
+}
+
+
+.btn-wrap .btn {
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /*位移*/
+    transform: translateY(-50%);
+}
+.btn-wrap .prev {
+    left: 20px;
+}
+.btn-wrap .next {
+    right: 20px;
+}
+
+
+
+.point-wrap {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+}
+.point-wrap .point {
+    display: inline-block;
+    width:  13px;
+    height: 13px;
+    margin: 0 6px;
+    cursor: pointer;
+    background: orange;
+    border-radius: 50%;
+}
+.point-wrap .point:hover {
+    background: #ccc;
+}
+
+.point-wrap .active {
+    background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

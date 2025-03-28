@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background: lightcyan;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header,
+main {
+    min-width: 1100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/**
+    1. 头部菜单
+ */
+
+nav {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.menu-list {
+    font-size: 0;
+}
+
+.menu-list li {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    background: #600;
+    cursor: pointer;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    position: relative;
+}
+
+.menu-list li:not(:first-child) {
+    border-left: 1px solid #eaeaea;
+}
+
+.menu-list li:first-child {
+    border-top-left-radius: 18px;
+}
+
+.menu-list li:last-child {
+    border-bottom-right-radius: 18px;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.menu-list>li:hover {
+    background: deepskyblue;
+    ;
+}
+
+.menu-list>li:hover a {
+    text-decoration: underline;
+}
+
+.menu-list>li:hover::after {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-size: .2em;
+    font-weight: lighter;
+    background: deepskyblue;
+    content: attr(data-msg);
+}
+
+.menu-list>li:active {
+    background: #b5bd08;
+}
+
+[name='myForm'] {
+    margin: 50px;
+    text-align: center;
+}
+
+[name='myForm']>input {
+    width: 300px;
+    height: 35px;
+    padding-left: 8px;
+    outline: none;
+    border: 1px solid #600;
+    font-size: 16px;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+[name='myForm']>input:focus {
+    border-color: deepskyblue;
+}
+
+[name='myForm']>input:focus::-webkit-input-placeholder {
+    color: deepskyblue;
+}
+
+[name='myForm']>input::-webkit-input-placeholder {
+    color: #333;
+}
+
+/**
+    2. 内容
+ */
+
+.content {
+    border-top: 1px solid #eee;
+}
+
+article {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: lighter;
+}
+
+article .title {
+    color: #600;
+    font-size: 28px;
+    font-weight: 200;
+    margin: 35px 0;
+}
+
+article .author {
+    text-decoration: none;
+}
+
+article .author:hover {
+    text-decoration: underline;
+}
+
+article time {
+    color: #999;
+}
+
+article .digest {
+    color: mediumpurple;
+}
+
+article .paragraph {
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+article .paragraph:first-child:first-letter {
+    font-size: 36px;
+    color: #333;
+    font-weight: 300;
+    margin-right: 8px;
+}
+
+/**
+    3. 尾部
+ */
+
+footer {
+    width: 100%;
+    min-width: 1100px;
+    background: #600;
+    padding: 30px 0;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*滚动条*/
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: #600;
+}
+
+::-webkit-scrollbar-thumb {
+    background: deepskyblue;
+}

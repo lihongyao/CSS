@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin:  0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.clearFix {
+    zoom: 1;
+}
+.clearFix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+

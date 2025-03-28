@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/**
+ * 1. 自定义字体
+ */
+@font-face {
+    font-family: 'maozedong';
+    src: url(../fonts/maozedong.ttf);
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 464432 */
+    src: url('//at.alicdn.com/t/font_464432_ijrhv7nrzif3whfr.eot');
+    src: url('//at.alicdn.com/t/font_464432_ijrhv7nrzif3whfr.eot?#iefix') format('embedded-opentype'),
+        url('//at.alicdn.com/t/font_464432_ijrhv7nrzif3whfr.woff') format('woff'),
+        url('//at.alicdn.com/t/font_464432_ijrhv7nrzif3whfr.ttf') format('truetype'),
+        url('//at.alicdn.com/t/font_464432_ijrhv7nrzif3whfr.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font: normal 12px 'iconfont';
+    color: #000;
+}
+
+/**
+ * 2. 公共样式
+ */
+.content,
+header,
+footer {
+    width: 75%;
+    min-width: 992px;
+    margin: 0 auto;
+}
+
+/**
+ * 3. 内容样式
+ */
+.title {
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px rgba(18, 5, 25, 0.67);
+}
+
+
+.desc {
+    margin: 15px auto;
+    text-indent: 2em;
+    font: 12px/20px "宋体";
+    line-height: 2em;
+    letter-spacing: 2px;
+}
+
+.desc:first-letter {
+    font-size: 34px;
+    margin-right: 8px;
+    color: #ff4500;
+    opacity: .75;
+}
+
+.texts {
+    height: 380px;
+    border-radius: 5px;
+    border: 1px solid rgba(18, 5, 25, 0.67);
+    margin: 0 auto;
+    padding: 10px;
+    font: normal normal 26px/50px 'maozedong';
+    writing-mode: vertical-rl;
+    letter-spacing: 3px;
+}
+
+.infos {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.infos li {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+.infos a {
+    text-decoration: none;
+    color: blue;
+}
+
+.infos a:hover {
+    text-decoration: underline;
+}
+
+.instructions {
+    text-align: center;
+}
+
+.links {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    color: #ff4500;
+}
+
+.links:after {
+    display: inline-block;
+    width: 200px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+    content: attr(data-msg);
+    background: #ff4500;
+    padding-left: 8px;
+    visibility: hidden;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.links:hover:after {
+    visibility: visible;
+}

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+
+body, html, contacts-page { width: 100%; height: 100%; }
+body::-webkit-scrollbar   { display: none; } /*去除滚动条*/
+
+/*头部*/
+header {
+    width: 100%;
+    height: 64px;
+    background: rgb(58, 188, 251);
+
+    position: fixed;
+    top:  0;
+    left: 0;
+
+    z-index: 10;
+}
+header > .title {
+    text-align: center;
+    color: #fff;
+    font: lighter 20px/64px '宋体';
+}
+
+/*内容*/
+main {
+    width:  100%;
+    height: 100%;
+    background: rgb(247, 247, 249);
+    box-sizing: border-box;
+    padding-top: 74px;
+}
+
+/*分组列表*/
+main > .group-list {
+    width:  100%;
+    height: auto;
+}
+
+main > .group-list > li {
+    width:  100%;
+    height: 55px;
+    overflow: hidden; /*默认隐藏好友列表*/
+
+    background-color: #fff;
+
+    cursor: pointer;
+    font: lighter 18px/55px '宋体';
+}
+
+main > .group-list > li.flag:hover { /*鼠标悬浮，展开列表*/
+    height: auto;
+}
+
+main > .group-list > li:before {
+    content: url("../images/arrow_x_16.png");
+
+    display: inline-block;
+    margin: auto 8px;
+}
+
+main > .group-list > li.flag:hover:before {
+    -webkit-transform: rotateZ(90deg);
+    -moz-transform: rotateZ(90deg);
+    -ms-transform: rotateZ(90deg);
+    -o-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+}
+/*好友列表*/
+main .friend-list > li {
+    height: 65px;
+    background-color: #fff;
+    position: relative;
+
+}
+main .friend-list > li > .head-portrait {
+    width:  50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-size: cover !important;
+
+    position: absolute;
+    top:  50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+main .friend-list > li > .infos {
+    width: calc(100% - 60px);
+    height: 100%;
+
+    box-sizing: border-box;
+    padding: 5px;
+    border-bottom: 1px solid rgb(244, 244, 245);
+    overflow: hidden;
+
+    position: absolute;
+    top:   0;
+    right: 0;
+}
+
+main .friend-list > li > .infos > .nike-name, main .friend-list > li > .infos > .signature {
+    width:  100%;
+    height: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+main .friend-list > li > .infos > .nike-name {
+    color: red;
+    font-size: 18px;
+}
+main .friend-list > li > .infos > .signature {
+    font-size: 15px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*头像设置*/
+main .friend-list li:nth-child(1) .head-portrait {
+    background: url("../images/Henrry Lee.JPG") no-repeat center center ;
+}
+main .friend-list li:nth-child(2) .head-portrait {
+    background: url("../images/Tim cook.jpeg") no-repeat center center ;
+}
+main .friend-list li:nth-child(3) .head-portrait {
+    background: url("../images/Li Dakang.jpeg") no-repeat center center ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+h1, p { margin: 0; padding: 0; }
+
+/* @infos:  字体样式
+----------------------------------------------------------------------------------------------------------*/
+@font-face { font-family: maozedong; src: url(../fonts/maozedong.ttf); }
+
+
+/* @infos:  内容样式
+----------------------------------------------------------------------------------------------------------*/
+html { height:100%;}
+body { min-width: 1100px; }
+
+
+.title { width: 1100px; border-bottom: 1px solid #000; margin: 30px auto; padding-bottom: 30px; text-align: center; text-shadow: 1px 1px 2px #000; font-size: 35px; letter-spacing: 3px;}
+
+.wrap { margin: 0 auto;  width:  840px; height: 520px; padding: 20px 0; border: 2px solid #000; border-radius: 10px; font-family: maozedong; background: repeating-linear-gradient(to left, transparent, transparent 69px, #000 70px); writing-mode: vertical-rl; writing-mode: tb-rl; -webkit-writing-mode: vertical-rl; }
+.wrap h1, .wrap p { line-height: 70px; font-size: 35px;}
+.wrap p { letter-spacing: 5px; font-size: 25px;  }
+
+
+
+
+
+
+
+
+
+
+
+
+

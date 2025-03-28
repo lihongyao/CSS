@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>按钮填充动画</title>
+    <style>
+      .button {
+        width: 140px;
+        border: 1px solid #444444;
+
+        text-align: center;
+        line-height: 45px;
+        cursor: pointer;
+        font-size: 18px;
+        letter-spacing: 2px;
+
+        position: relative;
+        transition: all 0.35s linear;
+      }
+
+      .button::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 100%;
+        background: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.35s linear;
+      }
+
+      .button:hover {
+        color: #ffffff;
+      }
+
+      .button:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button">立即购买</div>
+  </body>
+</html>

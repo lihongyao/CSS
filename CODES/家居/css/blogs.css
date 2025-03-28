@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+.content {
+    box-sizing: border-box;
+    padding: 0px 100px;
+}
+
+
+.content .wrap { width: 100%; }
+.content .articles { width: 75%; }
+.content .links { width: 15%; }
+
+.content .articles .sub-title {
+    margin-bottom: 15px;
+    color: saddlebrown;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.content .articles .pubdate {
+    font-size: 13px;
+    color: rgb(179, 179, 179);
+    line-height: 25px;
+}
+
+.content .articles .details { margin: 8px 0px; }
+.content .articles .details img {
+    width: 35%;
+}
+
+.content .articles .details .des {
+    width: 65%;
+    box-sizing: border-box;
+    padding-left: 20px;
+
+    font-size: 15px;
+    line-height: 23px;
+    color: 	rgb(179, 179, 179);
+}
+
+.content .articles .details a {
+    display: inline-block;
+    color: #fff;
+    padding: 2px 10px;
+    margin: 10px 0px;
+    background: #008800;
+    border-radius: 5px;
+}
+
+.content .articles .infos-list {
+    margin:  10px 0px 35px 0px;
+    padding: 15px 0px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.content .articles .infos-list li {
+    display: inline-block;
+    margin-right: 80px;
+}
+
+.content .infos-list li:before {
+    margin-right: 8px;
+    position: relative;
+    top: 2px;
+}
+.content .infos-list li:nth-child(1):before {
+    content: url("../imgs/h1.png");
+}
+.content .infos-list li:nth-child(2):before {
+    content: url("../imgs/h2.png");
+}
+.content .infos-list li:nth-child(3):before {
+    content: url("../imgs/h3.png");
+}
+
+
+.content .articles .pages { margin-bottom: 30px; }
+.content .articles .pages span {
+    color: #fff;
+    background: #008800;
+    padding: 3px 8px;
+    margin-right: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.content .articles .pages span:hover {
+    background: purple;
+}
+
+
+
+.content .links h1 {
+    color: saddlebrown;
+    font-weight: lighter;
+    margin: 30px 0px 20px 0px;
+}
+
+.content .link-list a {
+    color: rgb(179, 179, 179);
+    line-height: 25px;
+}
+.content .link-list a:hover {
+    color: #008800;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

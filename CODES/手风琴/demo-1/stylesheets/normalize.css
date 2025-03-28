@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* 标准化格式化样式 */
+/* 清除标签默认样式 */
+
+body, nav, header, footer, main, h1, h3, ul, li{
+    margin: 0; padding: 0;
+}
+
+a  { text-decoration: none; }
+ul { list-style: none; }
+
+.fl { float: left; }
+.fr { float: right;}
+.clearFloat { zoom: 1; }
+.clearFloat:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

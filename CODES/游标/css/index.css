@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+*  {margin: 0; padding: 0;}
+a  {text-decoration: none;}
+ul {list-style: none;}
+
+.menu-list {
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 0;
+}
+.menu-list > li {
+    display: inline-block;
+    padding: 8px 26px;
+    position: relative;
+    font-size: 16px;
+    
+}
+.menu-list > li::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: darkred;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    transition: all .25s linear;
+}
+.menu-list > li:hover::after {
+    opacity: 1;
+}
+.menu-list > li > a {
+    color: darkred;
+
+}

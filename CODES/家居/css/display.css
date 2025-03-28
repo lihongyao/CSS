@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+.content .wrap {
+    width: calc(100% - 200px);
+    margin: 0 auto;
+
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .wrap img {
+    width: 32%;
+    margin: 1% 0px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

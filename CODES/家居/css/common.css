@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+body, html { height: 100%; background-image: url("../imgs/bg.png");}
+body, ul, p, h1, h2, h3, h4, h5, h6, input, textarea, button { margin: 0; padding: 0; }
+
+a  { text-decoration: none; }
+ul { list-style: none; }
+
+.fl { float: left;  }
+.fr { float: right; }
+.clearFloat { zoom: 1; }
+.clearFloat:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.content {
+    padding: 0px 0px 30px;
+}
+header, 
+footer {
+    width: 100%;
+    min-width: 1100px;
+    height: auto;
+}
+.content {
+    width: 75%;
+    min-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*设置头部样式*/
+header .contact {
+    width:  100%;
+    background-color: #000;
+    box-sizing: border-box;
+    padding-right: 100px;
+    text-align: right;
+}
+header span { color: #fff; line-height: 45px; }
+header span:nth-child(2) {
+    color: #008800; font-size: 12px;
+}
+header span:nth-child(3) { font-size: 12px; }
+
+nav { width: 100%;}
+
+.menu-list { text-align: right; box-sizing: border-box; padding-right: 140px;}
+.menu-list li { display: inline-block; margin: 0 25px; }
+.menu-list a  { color: #000; font-size: 18px; line-height: 50px; font-weight: lighter; }
+.menu-list a:hover { color: #008800; }
+
+header .banner {
+    width: 100%;
+    height: 250px;
+    background: url("../imgs/banner.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+header .logo {
+    width:  90px;
+    height: 110px;
+    background: url("../imgs/logo1.png") no-repeat center center;
+    background-size: cover;
+
+    position: absolute;
+    left: 120px;
+    top: 0;
+}
+
+
+/*欢迎*/
+header .welcome {
+    width:  100%;
+    height: 240px;
+    box-sizing: border-box;
+    padding: 0 100px;
+    background-color: rgb(38, 38, 39);
+
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .welcome .img {
+    width:  210px;
+    height: 210px;
+    border-radius: 50%;
+    background: url("../imgs/welcome.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+header .welcome-box {
+    width: 450px;
+    color: #fff;
+}
+
+header .welcome-box h1 {
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+header .welcome-box p {
+    line-height: 20px;
+}
+/*设置内容样式*/
+.content { overflow: hidden; }
+.content .title {
+    font-weight: lighter;
+    color: rgb(102, 43, 11);
+    text-align: center;
+    margin: 50px 0px 30px 0px;
+}
+
+
+/*设置尾部样式*/
+footer {
+    background: rgb(38, 38, 39);
+    padding: 35px 0px;
+}
+footer .fmenu-list { text-align: center; }
+footer .fmenu-list > li {
+    width: 20%;
+    display: inline-block;
+    /*设置垂直对齐方式*/
+    vertical-align: top;
+
+    text-align: left;
+}
+footer .fmenu-list h1 {
+    color: #fff;
+    font-weight: lighter;
+    line-height: 60px;
+}
+
+footer .fsubmenu-list a {
+    color: #d3d3d3;
+    font-weight: lighter;
+    line-height: 25px;
+}
+footer .fsubmenu-list a:hover {
+    color: #008800;
+    text-decoration: underline;
+}
+
+footer .copryRight {
+    margin-top: 50px;
+
+    text-align: center;
+    color: #d3d3d3;
+}
+
+footer input {
+    background: transparent;
+    width: 150px;
+    height: 30px;
+    padding-left: 10px;
+    /*隐藏输入框的轮廓*/
+    outline: none;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+footer .img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    background: url("../imgs/arrow.png") no-repeat center center;
+    background-size: 16px 16px;
+    cursor: pointer;
+
+    position: relative;
+    top: 13px;
+    left: -6px;
+}
+
+
+footer input::-webkit-input-placeholder {
+    color: #fff;
+    padding-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

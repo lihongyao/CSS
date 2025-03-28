@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文本溢出</title>
+    <style>
+      .box {
+        width: 320px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin: 0 auto 8px;
+        padding: 0 6px;
+        line-height: 1.5;
+      }
+      .single-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .multi-line {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /** 显示行数 */
+        line-clamp: 3; /* 标准属性 */
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 当行 -->
+    <div class="box single-line">
+      Officia veniam ullamco exercitation sint pariatur irure sit esse commodo aliquip cupidatat. Magna fugiat tempor ipsum incididunt reprehenderit aliqua officia excepteur ipsum ea esse nisi aute.
+      Quis labore labore id dolore elit incididunt cupidatat elit culpa qui. Reprehenderit ipsum sint proident occaecat pariatur Lorem excepteur fugiat fugiat consectetur. Cupidatat ipsum exercitation
+      est exercitation ex do. Laborum laborum do tempor dolor ipsum ullamco mollit duis elit. Nisi commodo nostrud aliquip laborum voluptate.
+    </div>
+    <!-- 多行 -->
+    <div class="box multi-line">
+      Esse ad commodo esse aliqua eiusmod. Quis voluptate adipisicing in consequat. Eiusmod ad enim veniam consectetur. Sit elit excepteur laboris incididunt eiusmod consectetur. Lorem ipsum dolor,
+      sit amet consectetur adipisicing elit. Molestiae debitis numquam nulla voluptatibus pariatur sint, voluptatum quo rerum reiciendis ipsa nesciunt dicta earum sed dolore in recusandae quasi?
+      Veritatis, soluta?Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit pariatur, voluptatibus beatae fugiat totam. Possimus excepturi eos temporibus autem. Ipsum nulla minus
+      incidunt quas, labore accusamus et omnis eaque.
+    </div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # 简介
 
-[CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS)（层叠样式表，全称 **Cascading Style Sheets**）是一种声明式语言，用于控制网页内容在浏览器中的呈现方式。它通过设置样式规则，定义页面元素的布局、颜色、字体、动画等外观效果，是 Web 开发中不可或缺的核心技术之一，与 HTML 和 JavaScript 并列为 Web 三大支柱技术。
+[CSS](https://developer.mozilla.org/zh-CN/docs/Glossary/CSS)（层叠样式表，全称 **Cascading Style Sheets**）是一种声明式语言，用于控制网页内容在浏览器中的呈现方式。它通过设置样式规则，定义页面元素的布局、颜色、字体、动画等外观效果，是 Web 开发中不可或缺的核心技术之一，与 HTML 和 JavaScript 并列为 Web 三大支柱技术（前端三剑客，又称三大马车）。
 
 CSS 的主要功能是为 HTML 元素添加样式，也支持其他标记语言（如 SVG 和 XML）。它通过一组规则为选定的元素指定样式，规则由 **选择器** 和 **样式属性** 组成，其中样式属性由 **属性名** 和 **属性值** 配对定义。
 
@@ -406,3 +406,37 @@ CSS 单位在不同场景有不同的适用性：
 3. **时间和角度单位**主要用于动画和变换。
 
 灵活选择合适的单位可以提高布局的适配性和设计效果。
+
+# 了解CSS是如何工作的？
+
+@See https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/What_is_CSS
+
+当浏览器展示一个文件的时候，它必须兼顾文件的内容和文件的样式信息，下面我们会了解到它处理文件的标准的流程。需要知道的是，下面的步骤是浏览加载网页的简化版本，而且不同的浏览器在处理文件的时候会有不同的方式，但是下面的步骤基本都会出现。
+
+1. 浏览器载入 HTML 文件（比如从网络上获取）。
+2. 将 HTML 文件转化成一个 DOM，DOM 是文件在计算机内存中的表现形式。
+3. 接下来，浏览器会拉取该 HTML 相关的大部分资源，比如嵌入到页面的图片、视频和 CSS 样式，JavaScript 则会稍后进行处理。
+4. 浏览器拉取到 CSS 之后会进行解析，根据选择器的不同类型（比如 element、class、id 等等）把他们分到不同的“桶”中。浏览器基于它找到的不同的选择器，将不同的规则（基于选择器的规则，如元素选择器、类选择器、id 选择器等）应用在对应的 DOM 的节点中，并添加节点依赖的样式（这个中间步骤称为渲染树）。
+5. 上述的规则应用于渲染树之后，渲染树会依照应该出现的结构进行布局。
+6. 网页展示在屏幕上（这一步被称为着色）。
+
+结合下面的图示更形象：
+
+![](./imgs/rendering.svg)
+
+# 当浏览器遇到无法解析的 CSS 代码会发生什么?
+
+**浏览器什么也不会做，继续解析下一个 CSS 样式！**
+
+如果一个浏览器在解析你所书写的 CSS 规则的过程中遇到了无法理解的属性或者值，它会忽略这些并继续解析下面的 CSS 声明。在你书写了错误的 CSS 代码（或者误拼写），又或者当浏览器遇到对于它来说很新的还没有支持的 CSS 代码的时候上述的情况同样会发生（直接忽略）。
+
+相似的，当浏览器遇到无法解析的选择器的时候，他会直接忽略整个选择器规则，然后解析下一个 CSS 选择器。
+
+# 辅助工具
+
+辅助工具：
+
+1. 🔗 [圆角边框生成器](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_backgrounds_and_borders/Border-radius_generator)
+2. 🔗 [Border-image 生成器](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_backgrounds_and_borders/Border-image_generator)
+3. 🔗 [Box-shadow 生成器](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_backgrounds_and_borders/Box-shadow_generator)
+4. 🔗 [色彩选择工具](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_colors/Color_picker_tool)

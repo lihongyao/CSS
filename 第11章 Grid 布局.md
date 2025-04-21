@@ -20,7 +20,7 @@
 
 ## 网格容器
 
-网格容器是只使用了 `grid` 或 `inline-grid`属性 的元素，这是所有网格项的直接父项，在下面的例子中，`div.container` 就是一个网格容器
+网格容器是指使用了 `grid` 或 `inline-grid`属性 的元素，这是所有网格项的直接父项，在下面的例子中，`div.container` 就是一个网格容器
 
 ```html
 <div class="container" style="display: grid;">
@@ -32,7 +32,7 @@
 
 ## 网格项
 
-网格容器的直接子元素。下面的 `div.item` 元素就是网格项，但 `span.sub-item`不是。
+网格容器的直接子元素。下面的 `div.item` 元素就是网格项，但 `span.sub-item` 不是。
 
 ```html
 <div class="container" style="display: grid">
@@ -44,7 +44,7 @@
 
 ## 网格线
 
-构成网格结构的分隔线。它们可以是垂直的(“列网格线”)，也可以是水平的(“行网格线”)，位于行或列的两侧。这里的黄线是一个列网格线的例子。
+构成网格结构的分隔线。它们可以是垂直的（**列网格线**），也可以是水平的(**行网格线**)，位于行或列的两侧。这里的黄线是一个列网格线的例子。
 
 <img src="./IMGS/grid-line.svg" width="400" />
 
@@ -68,7 +68,7 @@
 
 # 技巧
 
-要开始使用，你首先需要将一个容器元素定义为网格，使用 display: grid，然后通过 grid-template-columns 和 grid-template-rows 设置列和行的大小，接着使用 grid-column 和 grid-row 将其子元素放置到网格中。与 flexbox 类似，网格项的源顺序并不重要，你可以通过 CSS 将它们放置在任何位置，这使得使用媒体查询来重新排列网格变得非常简单。
+要开始使用，你首先需要将一个容器元素定义为网格，使用 `display: grid`，然后通过 `grid-template-columns` 和 `grid-template-rows` 设置列和行的大小，接着使用 `grid-column` 和 `grid-row` 将其子元素放置到网格中。与 flexbox 类似，网格项的源顺序并不重要，你可以通过 CSS 将它们放置在任何位置，这使得使用媒体查询来重新排列网格变得非常简单。
 
 要熟练掌握一门技术，核心就是找到其最基本的套路，然后不断练习从而可以在之后的实践过程中减少决策的时间。所以，这一部分主要就是介绍网格布局构建过程中的一些常用套路。 
 
